@@ -1,0 +1,143 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: document_new_license
+  examples: |
+    - What documents do I need to get a new driver's license?
+    - documents required for new license application
+    - new license application
+    - new driver's license
+    - Tell me about the documents required for a new license.
+    - What should I bring to get a new driver's license?
+    - What documents are needed for a new license?
+
+- intent: document_new_title
+  examples: |
+    - What documents are required for a new vehicle title?
+    - new vehicle title
+    - documents required for new vehicle title
+    - vehicle title
+    - What do I need to get a new title for my vehicle?
+    - Tell me about the documents needed for a vehicle title.
+    - What should I bring to obtain a new vehicle title?
+
+- intent: document_drivers_license_renewal
+  examples: |
+    - What documents do I need to renew my driver's license?
+    - documents required for drivers license renewal
+    - drivers license renewal
+    - Tell me about the documents required for renewing a driver's license.
+    - What should I bring to renew my driver's license?
+    - What documents are needed for driver's license renewal?
+
+- intent: document_vehicle_registration_renewal
+  examples: |
+    - What documents are needed for vehicle registration renewal?
+    - documents required for vehicle registration renewal
+    - vehicle registration renewal
+    - Tell me what I need for renewing my vehicle registration.
+    - What should I bring to renew my vehicle registration?
+    - What documents are required for vehicle registration renewal?
+
+- intent: document_vehicle_inspection
+  examples: |
+    - What documents are needed for a vehicle inspection?
+    - documents required for vehicle inspection
+    - vehicle inspection
+    - Tell me what I need for a vehicle inspection.
+    - What should I bring to a vehicle inspection?
+    - What documents are required for vehicle inspection?
+
+- intent: tell_me_latest_news
+  examples: |
+    - what is the latest update at MVA?
+    - what is the latest news at MVA?
+    - what about the news?
+    - what are the recent updates?
+    - give me the latest updates?
+    - recent news please?
+
+- intent: tell_more_IVRF
+  examples: |
+    - can you detail about increased vehicle registration fee
+    - tell me more about increased vehicle registration fee?
+    - can you expand more about increased vehicle registration fee?
+    - what about increased vehicle registration fee?
+    - give me about increased vehicle registration fee?
+    - increased vehicle registration fee
+    - vehicle registration
+    - registration fee
+
+- intent: tell_more_FIDP
+  examples: |
+    - can you detail about Focus on Impaired Driving Prevention
+    - tell me more about Impaired Driving Prevention?
+    - can you expand more about Impaired Driving Prevention?
+    - what about Impaired Driving Prevention?
+    - give me about Impaired Driving Prevention?
+    - Focus on Impaired Driving Prevention
+    - Impaired Driving Prevention
+
+- intent: tell_more_EST
+  examples: |
+    - can you detail about Expansion of Services and Technology
+    - tell me more about Expansion of Services and Technology?
+    - can you expand more about Expansion of Services and Technology?
+    - what about Expansion of Services and Technology?
+    - give me about Expansion of Services and Technology?
+    - Expansion of Services and Technology
+    - Services and Technology
+
+- intent: tell_more_EVI
+  examples: |
+    - can you detail about Electric Vehicle Initiatives
+    - tell me more about Electric Vehicle Initiatives?
+    - can you expand more about Electric Vehicle Initiatives?
+    - what about Electric Vehicle Initiatives?
+    - give me about Electric Vehicle Initiatives?
+    - Electric Vehicle Initiatives
+
+- intent: mood_thanks
+  examples: |
+    - thanks for your info
+    - thanks
+    - Thank you 
+    - thank you so much
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+

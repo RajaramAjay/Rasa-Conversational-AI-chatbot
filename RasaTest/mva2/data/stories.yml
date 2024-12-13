@@ -1,0 +1,91 @@
+version: "3.1"
+
+stories:
+- story: document_new_license
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: document_new_license
+    - action: utter_document_new_license
+    - intent: mood_thanks
+    - action: utter_happy
+
+- story: document_new_title
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: document_new_title
+    - action: utter_document_new_title
+    - intent: mood_thanks
+    - action: utter_happy
+
+- story: document_drivers_license_renewal path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: document_drivers_license_renewal
+    - action: utter_document_drivers_license_renewal
+    - intent: mood_thanks
+    - action: utter_happy
+
+- story: document_vehicle_registration_renewal path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: document_vehicle_registration_renewal
+    - action: utter_document_vehicle_registration_renewal
+    - intent: mood_thanks
+    - action: utter_happy
+
+- story: document_vehicle_inspection path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: document_vehicle_inspection
+    - action: utter_document_vehicle_inspection
+    - intent: mood_thanks
+    - action: utter_happy
+
+- story: greet_and_multiple_documents
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: document_new_license
+    - action: utter_document_new_license
+    - intent: document_new_title
+    - action: utter_document_new_title
+    - intent: document_drivers_license_renewal
+    - action: utter_document_drivers_license_renewal
+    - intent: document_vehicle_registration_renewal
+    - action: utter_document_vehicle_registration_renewal
+    - intent: document_vehicle_inspection
+    - action: utter_document_vehicle_inspection
+    - intent: tell_me_latest_news
+    - action: utter_news 
+    - intent: tell_more_IVRF
+    - action: utter_more_IVRF
+    - intent: tell_more_FIDP
+    - action: utter_more_FIDP
+    - intent: tell_more_EST
+    - action: utter_more_EST
+    - intent: tell_more_EVI
+    - action: utter_more_EVI
+    - intent: mood_thanks
+    - action: utter_happy
+  
+# - story: news
+#   steps:
+#     - intent: greet
+#     - action: utter_greet
+#     - intent: tell_me_latest_news
+#     - action: utter_news
+#     - intent: tell_more_IVRF
+#     - action: utter_more_IVRF
+#     - intent: tell_more_FIDP
+#     - action: utter_more_FIDP
+#     - intent: tell_more_EST
+#     - action: utter_more_EST
+#     - intent: tell_more_EVI
+#     - action: utter_more_EVI
+#     - intent: mood_thanks
+#     - action: utter_happy

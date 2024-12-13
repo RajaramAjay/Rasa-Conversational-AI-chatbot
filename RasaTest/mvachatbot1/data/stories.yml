@@ -1,0 +1,48 @@
+version: "3.1"
+
+stories:
+
+- story: path1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tell_me_latest_news
+  - action: utter_news
+  - intent: tell_more_IVRF
+  - action: utter_more_IVRF
+  - intent: mood_thanks
+  - action: utter_happy
+
+- story: path2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tell_me_latest_news
+  - action: utter_news
+  - intent: tell_more_FIDP
+  - action: utter_more_FIDP
+  - intent: mood_thanks
+  - action: utter_happy
+
+- story: path3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tell_me_latest_news
+  - action: utter_news
+  - intent: tell_more_EST
+  - action: utter_more_EST
+  - intent: mood_thanks
+  - action: utter_happy
+
+
+- story: path4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tell_me_latest_news
+  - action: utter_news
+  - intent: tell_more_EVI
+  - action: utter_more_EVI
+  - intent: mood_thanks
+  - action: utter_happy

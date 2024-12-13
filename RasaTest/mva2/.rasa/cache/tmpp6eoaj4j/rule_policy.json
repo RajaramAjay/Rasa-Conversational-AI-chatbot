@@ -1,0 +1,46 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_drivers_license_renewal\"}}]": "utter_document_drivers_license_renewal",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_drivers_license_renewal\"}}, {\"prev_action\": {\"action_name\": \"utter_document_drivers_license_renewal\"}, \"user\": {\"intent\": \"document_drivers_license_renewal\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_vehicle_inspection\"}}]": "utter_document_vehicle_inspection",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_vehicle_inspection\"}}, {\"prev_action\": {\"action_name\": \"utter_document_vehicle_inspection\"}, \"user\": {\"intent\": \"document_vehicle_inspection\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_more_IVRF\"}}]": "utter_more_IVRF",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_more_IVRF\"}}, {\"prev_action\": {\"action_name\": \"utter_more_IVRF\"}, \"user\": {\"intent\": \"tell_more_IVRF\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_me_latest_news\"}}]": "utter_news",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_me_latest_news\"}}, {\"prev_action\": {\"action_name\": \"utter_news\"}, \"user\": {\"intent\": \"tell_me_latest_news\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_new_license\"}}]": "utter_document_new_license",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_new_license\"}}, {\"prev_action\": {\"action_name\": \"utter_document_new_license\"}, \"user\": {\"intent\": \"document_new_license\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_vehicle_registration_renewal\"}}]": "utter_document_vehicle_registration_renewal",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_vehicle_registration_renewal\"}}, {\"prev_action\": {\"action_name\": \"utter_document_vehicle_registration_renewal\"}, \"user\": {\"intent\": \"document_vehicle_registration_renewal\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mood_thanks\"}}]": "utter_happy",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mood_thanks\"}}, {\"prev_action\": {\"action_name\": \"utter_happy\"}, \"user\": {\"intent\": \"mood_thanks\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_more_EVI\"}}]": "utter_more_EVI",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_more_EVI\"}}, {\"prev_action\": {\"action_name\": \"utter_more_EVI\"}, \"user\": {\"intent\": \"tell_more_EVI\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_more_FIDP\"}}]": "utter_more_FIDP",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_more_FIDP\"}}, {\"prev_action\": {\"action_name\": \"utter_more_FIDP\"}, \"user\": {\"intent\": \"tell_more_FIDP\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_new_title\"}}]": "utter_document_new_title",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"document_new_title\"}}, {\"prev_action\": {\"action_name\": \"utter_document_new_title\"}, \"user\": {\"intent\": \"document_new_title\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_more_EST\"}}]": "utter_more_EST",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_more_EST\"}}, {\"prev_action\": {\"action_name\": \"utter_more_EST\"}, \"user\": {\"intent\": \"tell_more_EST\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "predicting default action with intent restart"
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - mood_thanks
+  - document_new_license
+  - document_new_title
+  - document_drivers_license_renewal
+  - document_vehicle_registration_renewal
+  - document_vehicle_inspection
+  - tell_me_latest_news
+  - tell_more_IVRF
+  - tell_more_FIDP
+  - tell_more_EST
+  - tell_more_EVI
+
+responses:
+  utter_greet:
+  - text: |
+      Hi! I'm your MVA bot. How i can help you:
+    buttons:
+      - title: "Latest News"
+        payload: "/tell_me_latest_news"
+      - title: "New Driver’s License"
+        payload: "/document_new_license"
+      - title: "New Vehicle Title"
+        payload: "/document_new_title"
+      - title: "License Renewal"
+        payload: "/document_drivers_license_renewal"
+      - title: "Vehicle Registration Renewal"
+        payload: "/document_vehicle_registration_renewal"
+      - title: "Vehicle Inspection"
+        payload: "/document_vehicle_inspection"
+      
+  utter_document_new_license:
+  - text: |
+      To get a new driver's license, you'll typically need the following documents:
+      1. Proof of identity (e.g., birth certificate, passport)
+      2. Social Security Number (SSN) or proof of SSN
+      3. Proof of residency (e.g., utility bill, lease agreement)
+      4. Completed application form
+      5. Payment for the license fee
+    buttons:
+      - title: "Main Menu"
+        payload: "/greet"
+
+  utter_document_new_title:
+  - text: |
+      To obtain a new vehicle title, you generally need:
+      1. Proof of ownership (e.g., current title, bill of sale)
+      2. Proof of identity (e.g., driver's license, passport)
+      3. Proof of residency (e.g., utility bill, lease agreement)
+      4. Vehicle's current odometer reading
+      5. Completed application form
+      6. Payment for the title fee
+    buttons:
+      - title: "Main Menu"
+        payload: "/greet"
+
+  utter_document_drivers_license_renewal:
+  - text: |
+      To renew your driver's license, you'll typically need:
+      1. Current driver's license
+      2. Proof of identity (e.g., birth certificate, passport)
+      3. Proof of residency (e.g., utility bill, lease agreement)
+      4. Payment for the renewal fee
+    buttons:
+      - title: "Main Menu"
+        payload: "/greet"
+
+  utter_document_vehicle_registration_renewal:
+  - text: |
+      To renew your vehicle registration, you will need:
+      1. Current registration certificate
+      2. Proof of insurance
+      3. Emission inspection certificate (if applicable)
+      4. Payment for the renewal fee
+    buttons:
+      - title: "Main Menu"
+        payload: "/greet"
+
+  utter_document_vehicle_inspection:
+  - text: |
+      For a vehicle inspection, you generally need:
+      1. Vehicle registration
+      2. Proof of insurance
+      3. Inspection fee
+    buttons:
+      - title: "Main Menu"
+        payload: "/greet"
+
+  utter_news:
+  - text: |
+      here are the recent news: 
+    buttons:
+      - title: "Increased Vehicle Registration Fees"
+        payload: "/tell_more_IVRF"
+      - title: "Focus on Impaired Driving Prevention"
+        payload: "/tell_more_FIDP"
+      - title: "Expansion of Services and Technology"
+        payload: "/tell_more_EST"
+      - title: "Electric Vehicle Initiatives"
+        payload: "/tell_more_EVI"
+
+  utter_more_IVRF:
+  - text: |
+      Starting July 1, 2024, vehicle registration fees in Maryland have increased. This adjustment is part of the Budget Reconciliation and Financing Act of 2024 and aims to support state transportation infrastructure and balanced budgeting.
+      For more details, visit: [Maryland Motor Vehicle Registration Rates Increase](https://smnewsnet.com/archives/533678/maryland-motor-vehicle-registration-rates-increase-on-july-1-2024/)
+    buttons:
+      - title: "Main Menu"
+        payload: "/greet"
+
+  utter_more_FIDP:
+  - text: |
+      The MVA has been actively promoting safe driving practices, especially around holiday periods. Ahead of Independence Day, the MVA collaborated with law enforcement to warn motorists about the risks and consequences of impaired driving​
+      For more details, visit: [Maryland Motor Vehicle](https://mva.maryland.gov/)
+    buttons:
+      - title: "Main Menu"
+        payload: "/greet"
+
+  utter_more_EST:
+  - text: |
+      The MVA continues to innovate by introducing services such as the Maryland Mobile ID in Samsung Wallet and opening new service offices. They are also working on improving customer service and integrating more digital solutions to make transactions easier for Maryland residents​ 
+      For more details, visit: [Maryland Motor Vehicle](https://mva.maryland.gov/)
+    buttons:
+      - title: "Main Menu"
+        payload: "/greet"
+
+  utter_more_EVI:
+  - text: |
+      There is an ongoing push to increase the number of zero-emission vehicles in Maryland. As of April 2024, there were over 102,530 electric vehicles registered, with goals to significantly increase this number to meet environmental targets​​ 
+      For more details, visit: [Electric Vehicle Initiatives](https://smnewsnet.com/archives/533678/maryland-motor-vehicle-registration-rates-increase-on-july-1-2024/)
+    buttons:
+      - title: "Main Menu"
+        payload: "/greet"
+
+  utter_happy:
+  - text: "Great, you're welcome!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

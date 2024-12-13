@@ -1,0 +1,34 @@
+version: "3.1"
+
+intents:
+  - greet
+  # - ask_time
+  - weather
+  - city
+  - mood_thanks
+  - goodbye
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+
+  utter_city:
+    - text: "Which city do you want to check for?"
+
+  utter_temp:
+    - text: "Todays temparature is {temp}"
+
+  utter_happy:
+    - text: "Great, let me know any further info?"
+
+  utter_goodbye:
+    - text: "Bye"
+
+actions:
+  # - action_get_current_time
+  - action_weather_api
+  - utter_greet
+  - utter_city
+  - utter_temp
+  - utter_happy
+  - utter_goodbye

@@ -1,0 +1,30 @@
+version: "3.1"
+
+stories:
+
+- story: happy veg path
+  steps:
+  - intent: greet
+  - action: utter_bot_greet
+  - intent: what_do_you_have
+  - action: utter_veg_non_veg
+  - intent: vegetarian
+  - action: utter_veg
+  - intent: order_veg
+  - action: utter_anythingelse
+  - intent: deny
+  - action: utter_thanks
+
+
+- story: happy non veg path
+  steps:
+  - intent: greet
+  - action: utter_bot_greet
+  - intent: what_do_you_have
+  - action: utter_veg_non_veg
+  - intent: non_vegetarian
+  - action: utter_non_veg
+  - intent: order_non_veg
+  - action: utter_anythingelse
+  - intent: deny
+  - action: utter_thanks

@@ -1,0 +1,51 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+
+# - intent: ask_time
+#   examples: |
+#     - What is the current time?
+#     - Can you tell me the time?
+#     - What's the date today?
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: weather
+  examples: |
+    - whats the weather
+    - tell me the weather today
+    - weather now
+    - weather please
+    - tell me the weather
+
+- intent: city
+  examples: |
+    - Delhi
+    - delhi
+    - mumbai
+    - Mumbai
+    - Nizamabad
+    - Hyderabad
+
+- intent: mood_thanks
+  examples: |
+    - thanks for your info
+    - thanks
+    - Thank you 
+    - thank you so much

@@ -1,0 +1,43 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Provide latest news
+  steps:
+  - intent: tell_me_latest_news
+  - action: utter_news
+
+- rule: Detail on Increased Vehicle Registration Fees
+  steps:
+  - intent: tell_more_IVRF
+  - action: utter_more_IVRF
+
+- rule: Detail on Focus on Impaired Driving Prevention
+  steps:
+  - intent: tell_more_FIDP
+  - action: utter_more_FIDP
+
+- rule: Detail on Expansion of Services and Technology
+  steps:
+  - intent: tell_more_EST
+  - action: utter_more_EST
+
+- rule: Detail on Electric Vehicle Initiatives
+  steps:
+  - intent: tell_more_EVI
+  - action: utter_more_EVI
+
+- rule: Thank the bot
+  steps:
+  - intent: mood_thanks
+  - action: utter_happy

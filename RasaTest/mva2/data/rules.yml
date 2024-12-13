@@ -1,0 +1,78 @@
+version: "3.1"
+
+rules:
+
+- rule: Handle any intent
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Handle document request for new driver's license
+  steps:
+  - intent: document_new_license
+  - action: utter_document_new_license
+
+- rule: Handle document request for new vehicle title
+  steps:
+  - intent: document_new_title
+  - action: utter_document_new_title
+
+- rule: Handle document request for driver's license renewal
+  steps:
+  - intent: document_drivers_license_renewal
+  - action: utter_document_drivers_license_renewal
+
+- rule: Handle document request for vehicle registration renewal
+  steps:
+  - intent: document_vehicle_registration_renewal
+  - action: utter_document_vehicle_registration_renewal
+
+- rule: Handle document request for vehicle inspection
+  steps:
+  - intent: document_vehicle_inspection
+  - action: utter_document_vehicle_inspection
+
+- rule: Provide latest news
+  steps:
+  - intent: tell_me_latest_news
+  - action: utter_news
+
+- rule: Handle detailed news request about IVRF
+  steps:
+  - intent: tell_more_IVRF
+  - action: utter_more_IVRF
+
+- rule: Handle detailed news request about FIDP
+  steps:
+  - intent: tell_more_FIDP
+  - action: utter_more_FIDP
+
+- rule: Handle detailed news request about EST
+  steps:
+  - intent: tell_more_EST
+  - action: utter_more_EST
+
+- rule: Handle detailed news request about EVI
+  steps:
+  - intent: tell_more_EVI
+  - action: utter_more_EVI
+
+- rule: Handle thank you message
+  steps:
+  - intent: mood_thanks
+  - action: utter_happy
+
+- rule: Handle goodbye message
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

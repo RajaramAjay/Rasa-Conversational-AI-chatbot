@@ -1,0 +1,70 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - tell_me_latest_news
+  - tell_more_IVRF
+  - tell_more_FIDP
+  - mood_thanks
+  - tell_more_EST
+  - tell_more_EVI
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_news:
+  - text: |
+      here are the recent news: 
+      1.Increased Vehicle Registration Fees 
+      2.Focus on Impaired Driving Prevention 
+      3.Expansion of Services and Technology 
+      4.Electric Vehicle Initiatives
+
+  utter_more_IVRF:
+     - text: |
+        Starting July 1, 2024, vehicle registration fees in Maryland have increased. This adjustment is part of the Budget Reconciliation and Financing Act of 2024 and aims to support state transportation infrastructure and balanced budgeting.
+        For more details, visit: [Maryland Motor Vehicle Registration Rates Increase](https://smnewsnet.com/archives/533678/maryland-motor-vehicle-registration-rates-increase-on-july-1-2024/)
+  
+  utter_more_FIDP:
+     - text: |
+        The MVA has been actively promoting safe driving practices, especially around holiday periods. Ahead of Independence Day, the MVA collaborated with law enforcement to warn motorists about the risks and consequences of impaired driving​
+        For more details, visit: [Maryland Motor Vehicle](https://mva.maryland.gov/)
+
+  utter_more_EST:
+     - text: |
+        The MVA continues to innovate by introducing services such as the Maryland Mobile ID in Samsung Wallet and opening new service offices. They are also working on improving customer service and integrating more digital solutions to make transactions easier for Maryland residents​ 
+        For more details, visit: [Maryland Motor Vehicle](https://mva.maryland.gov/)
+
+  utter_more_EVI:
+     - text: |
+        There is an ongoing push to increase the number of zero-emission vehicles in Maryland. As of April 2024, there were over 102,530 electric vehicles registered, with goals to significantly increase this number to meet environmental targets​​ 
+        For more details, visit: [Electric Vehicle Initiatives](https://smnewsnet.com/archives/533678/maryland-motor-vehicle-registration-rates-increase-on-july-1-2024/)
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, let me know any further info?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
